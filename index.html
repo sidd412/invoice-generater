@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+</head>
+<body>
+
+    
+
+    <div id="item1">
+      <div id="item0">
+        <h1>Welcome to my store</h1> <hr>
+    </div>
+
+    <div class="container">
+        <form action="action_page.php" id="myForm">
+          <div class="row">
+            <div class="col-25">
+              <label for="lname"> Full Name  </label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname"> contact No  </label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="number" name="number" placeholder="Enter your name">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Payment Mode  </label>
+            </div>
+            <div class="col-75">
+              <select id="mode" name="mode">
+                <option value="cash">cash</option>
+                <option value="Bank">Bank Transfer(NEFT/UPI)</option>
+                <option value="UPI">UPI</option>
+                <option value="Rozarpay">Razorpay(online payment)</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Reciever's Name</label>
+            </div>
+            <div class="col-75">
+              <select id="reciever" name="reciever">
+                <option value="siddhartha">Siddhartha</option>
+                <option value="satish">Satish</option>
+                <option value="prabhat">Prabhat</option>
+                <option value="harshit">Harshit</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Enter Amount  </label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="amount" name="amount" placeholder="Enter amount">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Enter date  </label>
+            </div>
+            <div class="col-75">
+              <input type="date" id="date" name="date" placeholder="Enter date">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Remark  </label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="remark" name="remark" placeholder="remark"> <br><br>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="pdf">
+    
+    <div id="main">
+      <div id="header">
+          <div id="logo">SID LOGO</div>
+          <div id="tagline">SID techno form for future</div>
+          <!-- <div id="gst">GDT-13872 </div>  -->
+      </div> <br> <hr>
+      <div style="text-align: center ;"  id="feereciept"><b>Fee Reciept</b></div>
+     <div id="data">
+      <div id="data1">Enrollment ID : <b id="sid">43hj4352</b></div>
+
+      <div id="data2">Student NAme : <b id="sname">Rohit</b></div>
+
+      <div id="data3">Conteact No: <b id="snumber">9128099382</b></div>
+
+      <div id="data4"> Paid On : <b id="sdate">01/06/2023</b> </div>
+
+     </div> <hr> 
+     <div id="foot">
+      <div id="smod">Payment Mode : <b id="smode" >Cheque</b> </div>
+
+      <div id="total">Total Amount : <b id="samount">9988</b> Rupees</div>
+
+      <!-- <div id="paidamount"> paid amount : <b>6565</b>Rupees </div> -->
+      <div id="recieverName"> Reciever Nmae :  <b id="sreciever">Rahul gupta</b></div>
+
+     </div> <hr>
+      <div id="final">
+          <div id="total">total: <b id="stotal">421</b> </div>
+          <div id="payer">payer : <b id="spayer">dsfah</b></div>
+          <div id="taker"> reciever : <b id="staker">ggggd</b></div>
+      </div>
+      <hr>
+  </div>
+
+  <div id="btns">
+    <div id="print"> <button onclick="window.print()" >Print</button> </div>
+    <div id="down"> <button id="download">download</button> </div>
+    <div> <button id="back" onclick="window.location.reload()">Back</button> </div>
+  </div>
+
+</div>
+</div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
